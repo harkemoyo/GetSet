@@ -17,9 +17,23 @@ const person = {
     age : 34,
 get fullName() {
       return `${this.firstName} ${this.lastName} ${this.age}`;
+    },
+
+    // setters always ensure value of a property is up To date
+    set fullName(value){
+     [this.firstName, this.lastName,this.age] = value
     }
   };
-  console.log(person.fullName);
+  // const Willy = {
+  //   firstName :'Kalibo',
+  // lastName: 'Wiz',
+  // age: 28
+  // }
+  person.firstName = 'Kalibo'
+  person.lastName = 'Wiz'
+  person.age = 30
+  const chesoni = person.fullName
+  console.log(chesoni);
   
 // setters
 const user = {
