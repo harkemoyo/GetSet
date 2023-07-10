@@ -32,14 +32,22 @@ get fullName() {
   person.firstName = 'Kalibo'
   person.lastName = 'Wiz'
   person.age = 30
+  
   const chesoni = person.fullName
   console.log(chesoni);
   
 // setters
+
+// variable declaration inside an obj
+let mark = "Hark"
 const user = {
     firstName: "John",
     lastName: "Doe",
     language: "",
+    mark,
+    /**
+     * @param {string} lang
+     */
     set lang(lang) {
       this.language = lang;
     }
@@ -47,4 +55,5 @@ const user = {
   
   // Set an object property using a setter:
   console.log(user.lang = "en");
+  console.log(user);
  
